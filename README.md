@@ -1,4 +1,4 @@
-# Simulations using Python
+# Simulations using Python and Monte Carlo (random samples)
 Calculate Pi by using Python simulations, following the tutorial from:  [junilearning](https://junilearning.com/blog/coding-projects/python-data-science-monte-carlo-simulations/)
 
 ## Scenario
@@ -13,10 +13,11 @@ Therefore: 4 * #darts in circle / #darts thrown = pi
 
 ## Approach
 1. Simulate one dart by randomly generating x and y coordinates for dart.
-2. Create Loop and record data in dataframe.
+2. Create Loop (using 1000 samples) and record data in dataframe.
 3. Plot results.
 
 ## Result
+Table containing all the sample throws:
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -99,7 +100,7 @@ Therefore: 4 * #darts in circle / #darts thrown = pi
 <p>1000 rows × 3 columns</p>
 </div>
 
-
+Plot of estimated PI:
 
 ![png](pi_plot.png)
 
