@@ -132,6 +132,6 @@ dmypy.json
 .ipynb_checkpoints
 
 # png
-.png
+*.png
 
 
