@@ -17,48 +17,6 @@ Therefore: 4 * #darts in circle / #darts thrown = pi
 3. Plot results.
 
 ## Result
-```python
-import random
-import math
-import pandas as pd
-
-
-# init
-darts_thrown = 0
-number_of_darts = 1000
-radius = 0.5
-dart_data = {'dart_number':[], 'hit':[], 'estimated_pi':[]}
-
-# loop darts
-while darts_thrown < number_of_darts:
-    # random samples
-    x = random.random() - 0.5
-    y = random.random() - 0.5
-    
-    # measure distance to center
-    x2 = x ** 2
-    y2 = y ** 2
-    distance = math.sqrt(x2 + y2)
-    
-    # test for hit
-    if distance < radius:
-        dart_data['hit'].append(1)
-    else:
-        dart_data['hit'].append(0)
-    
-    # collect statistics
-    darts_thrown += 1
-    dart_data['dart_number'].append(darts_thrown)
-    dart_data['estimated_pi'].append(sum(dart_data['hit'])*4/darts_thrown) 
-
-# create dataframe
-dart_table = pd.DataFrame(data=dart_data)
-dart_table
-```
-
-
-
-
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -140,28 +98,6 @@ dart_table
 </table>
 <p>1000 rows × 3 columns</p>
 </div>
-
-
-
-
-```python
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-
-plt.clf()
-plt.figure(figsize=(15,8))
-plot = sns.scatterplot(x="dart_number", y="estimated_pi", data=dart_table, marker='o')
-plt.axhline(y=3.14, color='m')
-plot.set(title="Calculate Pi using Monte Carlo", xlabel = "number of darts", ylabel="PI estimated")
-plt.savefig('pi_plot.png')
-
-```
-
-
-    <Figure size 432x288 with 0 Axes>
-
-
 
 ![png](output_1_1.png)
 
