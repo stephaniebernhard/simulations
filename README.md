@@ -7,7 +7,7 @@ Imagine throwing darts on a squared dart board with a circle (radius circle = si
 ## Math
 Pi can be approximated by diving the number of "hits" by the number of samples (= #darts thrown) and multiplying with factor 4.
 
-This follows from p(hit) = hits / #darts thrown = circle area / square area = pi*r^2 / 4*r^2.
+This follows from p(hit) = hits / #darts thrown = circle area / square area = pi * r^2 / 4 * r^2.
 
 Therefore: 4 * #darts in circle / #darts thrown = pi
 
