@@ -131,7 +131,4 @@ dmypy.json
 # Jupyter
 .ipynb_checkpoints
 
-# png
-*.png
-
 
