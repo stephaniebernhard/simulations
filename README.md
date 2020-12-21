@@ -1,5 +1,5 @@
-# simulations
-Calculate Pi by using python simulations, following the tutorial from:  [junilearning](https://junilearning.com/blog/coding-projects/python-data-science-monte-carlo-simulations/)
+# Simulations using Python
+Calculate Pi by using Python simulations, following the tutorial from:  [junilearning](https://junilearning.com/blog/coding-projects/python-data-science-monte-carlo-simulations/)
 
 ## Scenario
 Imagine throwing darts on a squared dart board with a circle (radius circle = sidelength of square/2). All darts ending up in the circle are counted as "hits".
