@@ -1,6 +1,10 @@
 # Simulations using Python and Monte Carlo (random samples)
 Calculate Pi by using Python simulations, following the tutorial from:  [junilearning](https://junilearning.com/blog/coding-projects/python-data-science-monte-carlo-simulations/)
 
+Plot of estimated PI:
+
+![png](pi_plot.png)
+
 ## Scenario
 Imagine throwing darts on a squared dart board with a circle (radius circle = sidelength of square/2). All darts ending up in the circle are counted as "hits".
 
@@ -99,8 +103,4 @@ Table containing all the sample throws:
 </table>
 <p>1000 rows × 3 columns</p>
 </div>
-
-Plot of estimated PI:
-
-![png](pi_plot.png)
 
