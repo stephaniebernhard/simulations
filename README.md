@@ -99,5 +99,7 @@ Therefore: 4 * #darts in circle / #darts thrown = pi
 <p>1000 rows × 3 columns</p>
 </div>
 
-![png](output_1_1.png)
+
+
+![png](pi_plot.png)
 
